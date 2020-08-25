@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "jest --watch",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
@@ -33,7 +34,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "jest": "^26.4.1",
+    "jest": "^26.4.2",
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   }

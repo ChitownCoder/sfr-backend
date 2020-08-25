@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
 })
 
 // GET A RECIPE BY ID
-// GET recipes by id
+
 router.get('/id', (req, res) => {
   const { id } = req.params;
 
@@ -73,7 +73,7 @@ router.post('/user/:id', (req, res) => {
 })
 
 
-// PUT a recipe
+// UPDATE a recipe
 router.put('/:id',  (req, res) => {
   const { id } = req.params;
   const changes = req.body;

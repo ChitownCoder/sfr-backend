@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 
 const Users = require('../users/users-model');
 
+
 router.get('/', (req, res) => {
    res.send('Oven is Preheating')
 })
@@ -19,6 +20,7 @@ router.post('/register', (req, res) => {
       .then(saved => {
          const token = generateToken(user)
          res.status(201).json({
+            user_id: saved.id,
             user: saved,
             token
          })
@@ -39,6 +41,7 @@ router.post('/login', (req, res) => {
             const token = generateToken(user)
 
             res.status(200).json({
+               user_id: user.id,
                message: `Welcome ${user.username}!`,
                token
             });
