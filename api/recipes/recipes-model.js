@@ -22,9 +22,6 @@ const add= (recipe) => {
 
 function update(id, changes) {
   return db('recipes').where({id}).update(changes)
-  // .then(recipe => {
-  //   return findRecipeById(id)
-  // })
 }
 
 function remove(id) {
