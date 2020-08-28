@@ -1,5 +1,5 @@
-// const pgConnection = process.env.DATABASE_URL ||
-
+// const pgConnection = process.env.DATABASE_URL || ""
+require('dotenv').config();
 
 module.exports = {
 	development: {
