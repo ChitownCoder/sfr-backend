@@ -1,3 +1,6 @@
+const pgConnection = process.env.DATABASE_URL ||
+
+
 module.exports = {
 	development: {
 		client: 'sqlite3',
