@@ -1,7 +1,5 @@
 exports.seed = function (knex) {
 	// Deletes ALL existing entries
-	return knex('recipes')
-		.then(function () {
 			// Inserts seed entries
 			return knex('recipes').insert([
 				{
@@ -35,5 +33,5 @@ exports.seed = function (knex) {
 					user_id: '2',
 				},
 			]);
-		});
-};
+		}
+
