@@ -13,8 +13,8 @@ function findRecipeById(id){
 
 const add= (recipe) => {
   return db ('recipes')
-  
-  .insert(recipe)
+  // added the 'id' for PG
+  .insert(recipe, 'id')
   .then(ids => {
     return findRecipeById(ids[0])
   })
