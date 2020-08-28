@@ -16,7 +16,7 @@ exports.seed = function (knex) {
 					id: 2,
 					title: 'Chicago Style Pizza',
 					source: 'Uncle Pete',
-					ingredients: '1 teaspoon sugar, 1 packet active dry yeast, 18 ounces app-purpose flour, 2 teaspoons salt, 1/8 teaspoon cream of tarter, 1/2 cup plus 3 tablespoons oil, 1 tablespoon of melted butter, 12 ounces sliced mozzarella, 1 pound bulk italian sausage, 8 ounces sliced pepperoni, 1 28 ounces can tomatoes, grated parmesan',
+					ingredients: '1 teaspoon sugar, 1 packet active dry yeast, 18 ounces app-purpose flour, 2 teaspoons salt, 1/8 teaspoon cream of tarter',
 					instructions: '1. Mix sugar, yeast and 11 ounces room temperature water (about 80 degrees) in a bowl and let bloom for 15 minutes. Combine flour, salt and cream of tartar in the bowl of a stand mixer. Once yeast has bloomed, add to dry',
 					category: 'Italian',
 					image: 'https://chicagopizzasportsgrille.com/wp-content/uploads/2015/09/chicagopizza2.png',
